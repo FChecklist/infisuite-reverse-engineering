@@ -1,0 +1,11 @@
+{
+  "mcpServers": {
+    "playwright": {
+      "command": "npx",
+      "args": ["-y", "@playwright/mcp@latest", "--headless", "--no-sandbox", "--isolated", "--output-dir", "/opt/veridian/ai-os/tasks/task-20260720-060747-billstack-bharatnet-reverse-engineering/workspace/screenshots", "--viewport-size", "1440x900"],
+      "env": {
+        "LD_LIBRARY_PATH": "/opt/veridian/workspace/browser-tools/local-libs/usr/lib/x86_64-linux-gnu"
+      }
+    }
+  }
+}
