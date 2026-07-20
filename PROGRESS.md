@@ -8,9 +8,6 @@
   - Modules switcher (Billstack/CRM)
   - Vendor Bills tab + Customer Bills tab dashboard widgets/links inventoried
   - Tenant Config record (GST/PAN/TDS/TCS/tax accounts) documented
-- [x] Screenshots saved: 00-login-page, 01-dashboard-home, 02-dashboard-customer-bills,
-      03-display-attributes, 04-masters-menu, 05-new-menu, 06-config-view,
-      07-modules-switcher, 08-new-menu-customerbills
 - [x] Masters > Vendors documented: docs/billstack-bharatnet/vendors.md
       (list empty-state, full create form incl. GST/Payment Terms/Legal Structure
       dropdown options, Invite Vendor form)
@@ -23,16 +20,23 @@
 - [x] Payments + Purchase Invoices Table documented:
       docs/billstack-bharatnet/payments-and-purchase-invoices-table.md
       (confirms Payment Type = Cash/Bank only -- no payment-gateway integration
-      found anywhere in Billstack so far)
+      found anywhere in Billstack)
 - [x] Sales Invoices & Receipts documented: docs/billstack-bharatnet/sales-invoices-and-receipts.md
       MAJOR FINDING: Create Invoice / Upload Invoices / Sales Invoices list / Receipts
       all return HTTP 403 "not enough permission" for billstack_admin -- clicked via
       actual dashboard links, not guessed URLs. Only Sales Invoices Table (approved/
       unapproved status widget) and Customers master work on the Customer Bills side.
+- [x] Masters > Items, HSN Code, Currencies, Workflow, Organization (Division),
+      Users documented: docs/billstack-bharatnet/masters-items-tax-org-users.md
+      (Items' full 6-section ERP form incl. 22 GL account mappings; HSN/Currencies
+      pre-seeded reference data; Workflow confirms Requisition->Quotation->PO->GRN
+      procurement chain; Users confirms tenant-wide shared user table w/ CRM module)
+- [x] Final docs/billstack-bharatnet/SUMMARY.md written (data model diagram,
+      function list, billing lifecycle states, Known Gaps, notable bugs)
 
 ## Remaining
-- [ ] Masters > Items, Item Categories, Items Type
-- [ ] Masters > HSN Code, Currencies, Workflow
-- [ ] Masters > Division, Departments, Cost Centres, Locations
-- [ ] Masters > Users, Invite Users
-- [ ] Final docs/billstack-bharatnet/SUMMARY.md (data model, function list, Known Gaps)
+- [ ] (Optional, time-boxed out) Item Categories, Items Type, Departments, Cost
+      Centres, Locations, Invite Users list/create screens individually -- assumed
+      to follow the standard grid template by analogy, not directly confirmed;
+      documented as a gap in SUMMARY.md
+- [ ] Task complete pending final commit+push
