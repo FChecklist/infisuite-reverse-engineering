@@ -1,0 +1,11 @@
+- generic [ref=f2e10]:
+  - heading "Welcome Back" [level=2] [ref=f2e12]
+  - generic [ref=f2e14]:
+    - textbox "User Name" [ref=f2e16]
+    - generic [ref=f2e17]:
+      - textbox "Enter Password" [ref=f2e18]
+      - generic [ref=f2e19] [cursor=pointer]: 
+    - textbox "Enter Captcha" [ref=f2e24]
+    - link "Forgot Password?" [ref=f2e26] [cursor=pointer]:
+      - /url: "#"
+    - button "Sign In" [ref=f2e28] [cursor=pointer]
