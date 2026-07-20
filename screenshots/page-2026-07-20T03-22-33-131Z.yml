@@ -1,0 +1,136 @@
+- generic [ref=f8e2]:
+  - navigation [ref=f8e276]:
+    - link [ref=f8e278] [cursor=pointer]:
+      - /url: /contracts/dashboard
+      - img "Indyanet" [ref=f8e279]
+    - list [ref=f8e281]:
+      - listitem [ref=f8e282]:
+        - link [ref=f8e283] [cursor=pointer]:
+          - /url: /contracts/dashboard
+      - listitem [ref=f8e286]:
+        - button "Master" [ref=f8e287] [cursor=pointer]
+      - listitem [ref=f8e291]:
+        - button "New" [ref=f8e292] [cursor=pointer]
+      - listitem [ref=f8e296]:
+        - list [ref=f8e297]:
+          - listitem
+          - listitem [ref=f8e298]:
+            - link "View CRM" [ref=f8e299] [cursor=pointer]:
+              - /url: https://indyanet.infisuite.in/login.php?infitokan=JTdCJTIyc3VibWl0JTIyJTNBJTIyTG9naW4lMjIlMkMlMjJwYXNzY2hlY2slMjIlM0ElMjJOJTIyJTJDJTIyZW1haWxfaWQlMjIlM0ElMjJhYmhpc2hlayU0MGluZHlhbmV0LmNvbSUyMiU3RA==
+              - img "View CRM" [ref=f8e300]
+          - listitem [ref=f8e302]:
+            - link "View Ticketings" [ref=f8e303] [cursor=pointer]:
+              - /url: https://indyanet.infisuite.in/login.php?infitokan=JTdCJTIyc3VibWl0JTIyJTNBJTIyTG9naW4lMjIlMkMlMjJwYXNzY2hlY2slMjIlM0ElMjJOJTIyJTJDJTIyZW1haWxfaWQlMjIlM0ElMjJhYmhpc2hlayU0MGluZHlhbmV0LmNvbSUyMiU3RA==
+              - img "View Ticketings" [ref=f8e304]
+          - listitem [ref=f8e306]:
+            - button [ref=f8e307] [cursor=pointer]:
+              - img "Profile" [ref=f8e308]
+              - text: Indyanet
+          - listitem [ref=f8e309]:
+            - button [ref=f8e310] [cursor=pointer]:
+              - img "Module" [ref=f8e311]
+  - generic [ref=f8e312]:
+    - generic [ref=f8e315]:
+      - generic [ref=f8e316]: Loading...
+      - generic [ref=f8e319]:
+        - generic [ref=f8e321]:
+          - radio "Active" [ref=f8e322]
+          - text: Active
+        - generic [ref=f8e324]:
+          - radio "Inactive" [ref=f8e325]
+          - text: Inactive
+        - generic [ref=f8e327]:
+          - radio "All" [checked] [ref=f8e328]
+          - text: All
+      - generic [ref=f8e329]:
+        - link [ref=f8e330] [cursor=pointer]:
+          - /url: /contracts/insert/document_categories
+          - button "Add New" [ref=f8e331]
+        - button "Back" [ref=f8e334] [cursor=pointer]
+      - generic [ref=f8e337]:
+        - generic [ref=f8e338]: Records
+        - combobox "Records" [ref=f8e339]:
+          - option "20" [selected]
+          - option "30"
+          - option "40"
+          - option "50"
+          - option "60"
+          - option "70"
+          - option "80"
+          - option "90"
+          - option "100"
+      - generic [ref=f8e340]:
+        - generic [ref=f8e341]: (Min 3 Characters Required)
+        - textbox "Search..." [ref=f8e342]
+    - generic [ref=f8e343]:
+      - heading "Document categories" [level=3] [ref=f8e345]
+      - generic [ref=f8e346]:
+        - table [ref=f8e348]:
+          - rowgroup [ref=f8e349]:
+            - row [ref=f8e350]:
+              - columnheader "Id" [ref=f8e351]
+              - columnheader "Category Name" [ref=f8e352]
+              - columnheader "Category Description" [ref=f8e353]
+              - columnheader "Is Active" [ref=f8e354]
+              - columnheader "Actions" [ref=f8e355]
+          - rowgroup [ref=f8e356]:
+            - row [ref=f8e357]:
+              - cell "1" [ref=f8e358]
+              - cell "JOIN" [ref=f8e359]
+              - cell [ref=f8e360]
+              - cell [ref=f8e361]
+              - cell [ref=f8e362]:
+                - link [ref=f8e363] [cursor=pointer]:
+                  - /url: /contracts/edit/document_categories/1
+                - link [ref=f8e366] [cursor=pointer]:
+                  - /url: /contracts/view/document_categories/1
+            - row [ref=f8e369]:
+              - cell "2" [ref=f8e370]
+              - cell "Pre Joining Checklist" [ref=f8e371]
+              - cell "Pre Joining Checklist" [ref=f8e372]
+              - cell [ref=f8e373]
+              - cell [ref=f8e374]:
+                - link [ref=f8e375] [cursor=pointer]:
+                  - /url: /contracts/edit/document_categories/2
+                - link [ref=f8e378] [cursor=pointer]:
+                  - /url: /contracts/view/document_categories/2
+            - row [ref=f8e381]:
+              - cell "3" [ref=f8e382]
+              - cell "Vendor Registration" [ref=f8e383]
+              - cell "Vendor Registration Checklist" [ref=f8e384]
+              - cell [ref=f8e385]
+              - cell [ref=f8e386]:
+                - link [ref=f8e387] [cursor=pointer]:
+                  - /url: /contracts/edit/document_categories/3
+                - link [ref=f8e390] [cursor=pointer]:
+                  - /url: /contracts/view/document_categories/3
+            - row [ref=f8e393]:
+              - cell "4" [ref=f8e394]
+              - cell "Document Release" [ref=f8e395]
+              - cell "Document Release" [ref=f8e396]
+              - cell [ref=f8e397]
+              - cell [ref=f8e398]:
+                - link [ref=f8e399] [cursor=pointer]:
+                  - /url: /contracts/edit/document_categories/4
+                - link [ref=f8e402] [cursor=pointer]:
+                  - /url: /contracts/view/document_categories/4
+            - row [ref=f8e405]:
+              - cell "5" [ref=f8e406]
+              - cell "Contract" [ref=f8e407]
+              - cell "Contract" [ref=f8e408]
+              - cell [ref=f8e409]
+              - cell [ref=f8e410]:
+                - link [ref=f8e411] [cursor=pointer]:
+                  - /url: /contracts/edit/document_categories/5
+                - link [ref=f8e414] [cursor=pointer]:
+                  - /url: /contracts/view/document_categories/5
+        - navigation [ref=f8e418]:
+          - list [ref=f8e419]:
+            - listitem [ref=f8e420]:
+              - button "Previous"
+            - listitem [ref=f8e421]:
+              - button "1" [ref=f8e422] [cursor=pointer]
+            - listitem [ref=f8e423]:
+              - button "Next"
+  - contentinfo [ref=f8e424]:
+    - paragraph [ref=f8e425]: © 2026 Admin Panel. All rights reserved.

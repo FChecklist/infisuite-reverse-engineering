@@ -1,0 +1,147 @@
+- generic [ref=f8e9]:
+  - navigation [ref=f8e10]:
+    - link [ref=f8e12] [cursor=pointer]:
+      - /url: /contracts/dashboard
+      - img "Indyanet" [ref=f8e13]
+    - list [ref=f8e15]:
+      - listitem [ref=f8e16]:
+        - link [ref=f8e17] [cursor=pointer]:
+          - /url: /contracts/dashboard
+      - listitem [ref=f8e20]:
+        - button "Master" [ref=f8e21] [cursor=pointer]
+      - listitem [ref=f8e25]:
+        - button "New" [active] [ref=f8e26] [cursor=pointer]
+      - listitem [ref=f8e30]:
+        - list [ref=f8e31]:
+          - listitem
+          - listitem [ref=f8e32]:
+            - link "View CRM" [ref=f8e33] [cursor=pointer]:
+              - /url: https://indyanet.infisuite.in/login.php?infitokan=JTdCJTIyc3VibWl0JTIyJTNBJTIyTG9naW4lMjIlMkMlMjJwYXNzY2hlY2slMjIlM0ElMjJOJTIyJTJDJTIyZW1haWxfaWQlMjIlM0ElMjJhYmhpc2hlayU0MGluZHlhbmV0LmNvbSUyMiU3RA==
+              - img "View CRM" [ref=f8e34]
+          - listitem [ref=f8e36]:
+            - link "View Ticketings" [ref=f8e37] [cursor=pointer]:
+              - /url: https://indyanet.infisuite.in/login.php?infitokan=JTdCJTIyc3VibWl0JTIyJTNBJTIyTG9naW4lMjIlMkMlMjJwYXNzY2hlY2slMjIlM0ElMjJOJTIyJTJDJTIyZW1haWxfaWQlMjIlM0ElMjJhYmhpc2hlayU0MGluZHlhbmV0LmNvbSUyMiU3RA==
+              - img "View Ticketings" [ref=f8e38]
+          - listitem [ref=f8e40]:
+            - button [ref=f8e41] [cursor=pointer]:
+              - img "Profile" [ref=f8e42]
+              - text: Indyanet
+          - listitem [ref=f8e43]:
+            - button [ref=f8e44] [cursor=pointer]:
+              - img "Module" [ref=f8e45]
+  - generic [ref=f8e46]:
+    - generic [ref=f8e48]:
+      - heading "Dashboard" [level=5] [ref=f8e49]
+      - list [ref=f8e51]:
+        - listitem [ref=f8e52]:
+          - link [ref=f8e53] [cursor=pointer]:
+            - /url: /contracts
+        - listitem [ref=f8e56]:
+          - text: /
+          - link "Dashboard" [ref=f8e57] [cursor=pointer]:
+            - /url: /contracts
+    - generic [ref=f8e58]:
+      - generic [ref=f8e61]:
+        - generic [ref=f8e63]:
+          - heading "Contracts" [level=6] [ref=f8e64]
+          - paragraph [ref=f8e65]: "0"
+        - paragraph [ref=f8e70]: Total Contracts
+      - generic [ref=f8e73]:
+        - generic [ref=f8e75]:
+          - heading "Active" [level=6] [ref=f8e76]
+          - paragraph [ref=f8e77]: "0"
+        - paragraph [ref=f8e82]: Total Active Contracts
+      - generic [ref=f8e85]:
+        - generic [ref=f8e87]:
+          - heading "Expired" [level=6] [ref=f8e88]
+          - paragraph [ref=f8e89]: "0"
+        - paragraph [ref=f8e94]: Total Expired Contracts
+      - generic [ref=f8e97]:
+        - generic [ref=f8e99]:
+          - heading "Total Customers" [level=6] [ref=f8e100]
+          - paragraph [ref=f8e101]: "11"
+        - paragraph [ref=f8e106]
+      - generic [ref=f8e109]:
+        - generic [ref=f8e111]:
+          - heading "Total Vendors" [level=6] [ref=f8e112]
+          - paragraph [ref=f8e113]: "2"
+        - paragraph [ref=f8e118]
+    - generic [ref=f8e119]:
+      - generic [ref=f8e123]:
+        - tablist [ref=f8e124]:
+          - listitem [ref=f8e125]:
+            - link "Customers" [ref=f8e126] [cursor=pointer]:
+              - /url: "#Customers"
+          - listitem [ref=f8e127]:
+            - link "Vendors" [ref=f8e128] [cursor=pointer]:
+              - /url: "#Vendors"
+        - generic [ref=f8e131]:
+          - generic [ref=f8e133]:
+            - heading "My Contracts" [level=5] [ref=f8e135]
+            - generic [ref=f8e136]:
+              - generic [ref=f8e137]:
+                - searchbox "Search..." [ref=f8e141]
+                - generic [ref=f8e145]:
+                  - button "All" [ref=f8e146] [cursor=pointer]
+                  - button "Active" [ref=f8e147] [cursor=pointer]
+                  - button "Expired" [ref=f8e148] [cursor=pointer]
+              - table [ref=f8e150]:
+                - rowgroup [ref=f8e151]:
+                  - row [ref=f8e152]:
+                    - columnheader "#" [ref=f8e153]
+                    - columnheader "Contract" [ref=f8e154] [cursor=pointer]
+                    - columnheader "Start Date" [ref=f8e157] [cursor=pointer]
+                    - columnheader "End Date" [ref=f8e160] [cursor=pointer]
+                    - columnheader "Status" [ref=f8e163] [cursor=pointer]
+                    - columnheader "Contact Number" [ref=f8e166] [cursor=pointer]
+                - rowgroup [ref=f8e169]:
+                  - row [ref=f8e170]:
+                    - cell "No contracts found" [ref=f8e171]
+          - generic [ref=f8e172]:
+            - generic [ref=f8e173]:
+              - heading "Expiring Contracts" [level=5] [ref=f8e175]
+              - generic [ref=f8e178]:
+                - generic [ref=f8e179]:
+                  - heading [level=2] [ref=f8e180]:
+                    - button "Expires in 30 Days" [expanded] [ref=f8e181] [cursor=pointer]
+                  - table [ref=f8e185]:
+                    - rowgroup [ref=f8e186]:
+                      - row [ref=f8e187]:
+                        - columnheader "Contract Name" [ref=f8e188]
+                        - columnheader "Days Left" [ref=f8e189]
+                        - columnheader "End Date" [ref=f8e190]
+                    - rowgroup [ref=f8e191]:
+                      - row [ref=f8e192]:
+                        - cell "No contracts in this range" [ref=f8e193]
+                - heading [level=2] [ref=f8e195]:
+                  - button "Expires in 31 to 60 Days" [expanded] [ref=f8e196] [cursor=pointer]
+                - heading [level=2] [ref=f8e198]:
+                  - button "Expires in 61-90 Days" [expanded] [ref=f8e199] [cursor=pointer]
+            - generic [ref=f8e200]:
+              - heading "Expired Contracts" [level=5] [ref=f8e202]
+              - generic [ref=f8e204]:
+                - generic [ref=f8e205]:
+                  - heading [level=2] [ref=f8e206]:
+                    - button "Expired last 30 Days (0)" [expanded] [ref=f8e207] [cursor=pointer]
+                  - table [ref=f8e211]:
+                    - rowgroup [ref=f8e212]:
+                      - row [ref=f8e213]:
+                        - columnheader "Contract Name" [ref=f8e214]
+                        - columnheader "Days Expired" [ref=f8e215]
+                        - columnheader "End Date" [ref=f8e216]
+                    - rowgroup [ref=f8e217]:
+                      - row [ref=f8e218]:
+                        - cell "No contracts expired in this range" [ref=f8e219]
+                - heading [level=2] [ref=f8e221]:
+                  - button "Expired last 60 Days (0)" [ref=f8e222] [cursor=pointer]
+                - heading [level=2] [ref=f8e224]:
+                  - button "Expired last 90 Days (0)" [ref=f8e225] [cursor=pointer]
+      - generic [ref=f8e227]:
+        - heading "Progress Bar With Percentage" [level=5] [ref=f8e229]
+        - generic [ref=f8e231]:
+          - heading [level=2] [ref=f8e235]:
+            - button "Customer Contracts (0)" [ref=f8e236] [cursor=pointer]
+          - heading [level=2] [ref=f8e240]:
+            - button "Vendor Contracts (0)" [ref=f8e241] [cursor=pointer]
+  - contentinfo [ref=f8e242]:
+    - paragraph [ref=f8e243]: © 2026 Admin Panel. All rights reserved.

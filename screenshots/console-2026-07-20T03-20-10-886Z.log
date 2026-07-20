@@ -1,0 +1,12 @@
+[    2112ms] [LOG] backdate_limit --  -600 @ https://indyanet.infisuite.in/assets/js/custom_datepicker.js:9
+[    2464ms] Error: Graph container element not found
+    at Area.Grid [as constructor] (https://indyanet.infisuite.in/assets/bower_components/morris.js/js/morris.js:85:15)
+    at Area.Line [as constructor] (https://indyanet.infisuite.in/assets/bower_components/morris.js/js/morris.js:726:34)
+    at new Area (https://indyanet.infisuite.in/assets/bower_components/morris.js/js/morris.js:1299:34)
+    at Object.Area (https://indyanet.infisuite.in/assets/bower_components/morris.js/js/morris.js:1292:16)
+    at https://indyanet.infisuite.in/assets/pages/chart/morris/morris-custom-chart.js:17:8
+[    8070ms] TypeError: Cannot read properties of undefined (reading 'classList')
+    at ut.show (https://indyanet.infisuite.in/assets/bower_components/bootstrap/js/bootstrap.min.js:6:22256)
+    at ut.toggle (https://indyanet.infisuite.in/assets/bower_components/bootstrap/js/bootstrap.min.js:6:22209)
+    at HTMLDivElement.<anonymous> (https://indyanet.infisuite.in/assets/bower_components/bootstrap/js/bootstrap.min.js:6:23674)
+    at HTMLDivElement.s (https://indyanet.infisuite.in/assets/bower_components/bootstrap/js/bootstrap.min.js:6:5784)
