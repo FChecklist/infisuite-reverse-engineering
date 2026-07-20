@@ -2,21 +2,21 @@
 
 ## Completed
 - [x] Logged into Cityline CRM (crm_admin@citylinenetworks.infisuite.in). Password convention confirmed: `infi123` (NOT `1234`).
-- [x] Dashboard screenshot + navigation map written: docs/cityline-crm/00-navigation-map.md
-- [x] Explored Modules switcher (CRM/Billstack/Contract), Masters mega-menu inventory
-- [x] Explored Projects tab in depth (only populated CRM entity, 27 test records) incl. wide-date-range grid + Add/Edit Project form fields
-- [x] Explored Leads tab (empty) + Lead create form fields (matches Bharatnet platform structure, minor typo diff: "Facebok" vs Bharatnet's "Facebook")
+- [x] Full CRM documentation written under docs/cityline-crm/:
+  - 00-navigation-map.md, leads.md, contacts.md, companies.md, deals.md, campaign.md,
+    projects.md (27 real test records!), feasibility.md (resolves bharatnet gap: dynamic
+    form builder found under Masters > Feasibilty Inputs), lead-contact-assignings.md,
+    masters.md, display-attributes.md, announcements.md, settings.md, SUMMARY.md
+- [x] Screenshots captured under screenshots/cityline-crm/ (~26 files)
+- [x] Compared against bharatnet tenant throughout (platform-identical Settings tree/PI
+  numbers, identical form fields/enums; tenant differences: 3 modules incl. Contract,
+  QA/test-sandbox data character, Feasibility Types/Inputs masters populated)
 
 ## Remaining
-- [ ] Document Leads, Contacts, Companies, Deals, Campaign, Feasibility modules (docs/cityline-crm/*.md)
-- [ ] Document Projects module fully (docs/cityline-crm/projects.md)
-- [ ] Document Lead/Contact Assignings
-- [ ] Document Masters: Item Categories, Items Type, UOM, Items, Feasibility Types, Feasibility Inputs, Customers, Users, Invite Users
-- [ ] Document Display Attributes, Announcements
-- [ ] Document Application Settings tree
-- [ ] Write docs/cityline-crm/SUMMARY.md (data model, function list, bharatnet comparison, gaps)
-- [ ] Commit+push CRM docs
-- [ ] Log into Billstack (bill_admin@citylinenetworks.infisuite.in), confirm password convention
-- [ ] Document Billstack modules under docs/cityline-billstack/
-- [ ] Write docs/cityline-billstack/SUMMARY.md
+- [ ] Commit + push CRM docs (about to do now)
+- [ ] Log into Billstack (bill_admin@citylinenetworks.infisuite.in), confirm password convention (try infi123 first based on CRM finding)
+- [ ] Map Billstack navigation -> docs/cityline-billstack/00-navigation-map.md
+- [ ] Document Billstack modules under docs/cityline-billstack/*.md, screenshots under screenshots/cityline-billstack/
+- [ ] Check if docs/billstack-bharatnet/ exists (on worker/task-20260720-060747-billstack-bharatnet-reverse-engineering branch) for reference format/depth
+- [ ] Write docs/cityline-billstack/SUMMARY.md (data model, function list, bharatnet comparison, Known Gaps)
 - [ ] Final commit+push
