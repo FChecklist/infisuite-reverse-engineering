@@ -1,0 +1,19 @@
+# Scratch / tooling artifacts from browser-automation exploration — not deliverables.
+# (Screenshots that ARE deliverables live under screenshots/<system-slug>/ and are tracked.)
+/screenshots/*.log
+/screenshots/*.yml
+/screenshots/crm-bharatnet/captcha-*.png
+/screenshots/crm-bharatnet/synthetic-test.png
+/screenshots/crm-bharatnet/login-full.png
+/screenshots/crm-bharatnet/login-page.png
+/screenshots/crm-bharatnet/home.png
+/screenshots/crm-bharatnet/dashboard-after-login.png
+/captcha-clean.png
+/captcha-test.png
+/dom-dumps/
+/browser.js
+/solve-login.js
+/preprocess_captcha.py
+/.auth.json
+/eng.traineddata
+node_modules/
