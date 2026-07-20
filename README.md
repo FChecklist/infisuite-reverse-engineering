@@ -11,6 +11,7 @@ Full reverse-engineered functional + data-structure documentation of the infisui
 | CRM/Billstack (Citylinenetworks) | http://citylinenetworks.infisuite.in/ | not started |
 | Contracts (Citylinenetworks) | http://citylinenetworks.infisuite.in/contracts | not started |
 | Ticketing (Citylinenetworks) | http://citylinenetworks.infisuite.in/ticketing | not started |
+| Indyanet (type TBD — identified via exploration) | https://indyanet.infisuite.in/ | not started — 3 logins to explore (abhishek@indyanet.com, aitad@bbtel.in, shrinad@indyanet.com), document access differences per account |
 
 ## Structure
 
