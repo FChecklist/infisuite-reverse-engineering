@@ -34,9 +34,14 @@
 - [x] Final docs/billstack-bharatnet/SUMMARY.md written (data model diagram,
       function list, billing lifecycle states, Known Gaps, notable bugs)
 
+- [x] Verified all commits (through 5c2ab2f) pushed to origin; working tree clean
+
 ## Remaining
-- [ ] (Optional, time-boxed out) Item Categories, Items Type, Departments, Cost
-      Centres, Locations, Invite Users list/create screens individually -- assumed
-      to follow the standard grid template by analogy, not directly confirmed;
-      documented as a gap in SUMMARY.md
-- [ ] Task complete pending final commit+push
+- [ ] (Optional, time-boxed out, not blocking) Item Categories, Items Type,
+      Departments, Cost Centres, Locations, Invite Users list/create screens
+      individually -- assumed to follow the standard grid template by analogy,
+      not directly confirmed; documented as Known Gap #4 in SUMMARY.md
+
+Task is complete: all 7 doc files + SUMMARY.md + 00-navigation-map.md + 56
+screenshots are written, committed, and pushed to
+origin/worker/task-20260720-060747-billstack-bharatnet-reverse-engineering.
