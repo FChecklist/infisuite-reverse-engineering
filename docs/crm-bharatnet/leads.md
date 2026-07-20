@@ -32,36 +32,38 @@ The Home dashboard's "Recently Created Leads" widget has a "View all" link; its 
 Opens as a right-side slide-over panel titled **"Lead"**, in 3 sections. Screenshots: `leads-02-plus-leads-dropdown.png`, `leads-03-lead-source-options.png`, `leads-04-lead-status-options.png`.
 
 ### Personal information
-| Field | Type | Required | Notes |
-|---|---|---|---|
-| Lead Source | searchable dropdown | **Yes** (*) | Options observed: Self (default), Facebook, Instagram, Linkdin [sic — typo in product], Website, Email Campaigns |
-| Originator | searchable dropdown | **Yes** (*) | Defaults to the logged-in user ("CRM Admin"). Almost certainly sourced from the platform's Users list (Masters > Users) — i.e. Lead.originator is a FK to a User. |
-| First Name | text | **Yes** (*) | |
-| Middle Name | text | No | |
-| last Name | text | **Yes** (*) | Label capitalization as-shown in UI ("last Name", lowercase L) |
-| Email | text | No | no visible format hint |
-| Phone No. | text | **Yes** (*) | |
-| Office No. | text | No | |
-| Fax | text | No | |
-| Website | text | No | |
-| Company Name | **plain text**, not a dropdown | No | Notable: this is free text, not a foreign key to the Companies entity — a Lead is not linked to a real Company record until/unless a later "convert" step exists (not observed — no leads to convert) |
-| Campaign | searchable dropdown, default "Select Any One" | No | References the Campaign entity (see `campaign.md`) |
-| Lead Status | searchable dropdown | No (no asterisk) | Options: **New** (default), Contacted, Interested, Not Interested, Lost, Follow up Required. This is the Lead pipeline/status field. |
-| Image | file upload (avatar-style circular preview, "Change Image") | No | |
+| Field | `name` attr | Type | Required | Notes |
+|---|---|---|---|---|
+| Lead Source | `contact_source` | searchable dropdown | **Yes** (*) | 9 options (code → label): `SELF` Self (default), `FCBK` Facebook, `INST` Instagram, `LIND` Linkdin [sic — typo in product], `WEVS` Website, `EMICAMP` Email Campaigns, `ORGSEO` Organic Search (SEO), `ETS` Events and Trade Shows, `WOM` Word of Mouth |
+| Originator | `originator` | searchable dropdown | **Yes** (*) | Defaults to the logged-in user ("CRM Admin", value `2`). FK to the platform's Users list — options seen: Anthony Johnston (1), CRM Admin (2), Billstack Admin (3). |
+| First Name | `first_name` | text | **Yes** (*) | |
+| Middle Name | `middle_name` | text | No | |
+| last Name | `last_name` | text | **Yes** (*) | Label capitalization as-shown in UI ("last Name", lowercase L) |
+| Email | `email_id` | email (HTML5) | No | HTML5 `type=email` → client-side format validation |
+| Phone No. | `phone` | tel | **Yes** (*) | |
+| Office No. | `office_phone` | tel | No | |
+| Fax | `fax` | text | No | |
+| Website | `website` | text | No | |
+| Company Name | `company_name` | **plain text**, not a dropdown | No | Free text, not a FK to the Companies entity — a Lead is not linked to a real Company record until/unless a later "convert" step exists (not observed — no leads to convert) |
+| Campaign | `crm_campaign_id` | searchable dropdown, default "Select Any One" | No | FK → Campaign entity (see `campaign.md`). **Empty** on this tenant (no campaigns exist). |
+| Lead Status | `crm_status` | searchable dropdown | No (no asterisk) | 10-value status ladder (value → label): `0` New (default), `1` Contacted, `2` Interested, `3` Not Interested, `4` Lost, `5` Follow up Required, `6` Referred, `7` No Response, `8` Junk Or Spam, `9` Re engage Later. This is the Lead lifecycle status (flat enum, not a staged pipeline). |
+| Image | (file) | file upload (avatar-style circular preview, "Change Image") | No | |
 
 ### Address Information
-| Field | Type | Required | Notes |
-|---|---|---|---|
-| Address | text | No | |
-| Country | dropdown, default "Select Any One" | No | Sourced from Settings > Geography > Countries |
-| State | dropdown, default "Select Any One" | No | Sourced from Settings > Geography > States; almost certainly cascades from Country (inferred, not confirmed — did not test since it requires a Country selection to observe) |
-| City | dropdown, default "Select Any One" | No | Sourced from Settings > Geography > Cities; likely cascades from State (inferred) |
-| Post Code | text | No | |
+| Field | `name` attr | Type | Required | Notes |
+|---|---|---|---|---|
+| Address | `address` | textarea | No | |
+| Country | `country_id` | dropdown, default "Select Any One" | No | Sourced from Settings > Geography > Countries — **251** countries present (India = `101`). |
+| State | `state_id` | dropdown, default "Select Any One" | No | Sourced from Settings > Geography > States; **cascading** — empty until a Country is selected. |
+| City | `city_id` | dropdown, default "Select Any One" | No | Sourced from Settings > Geography > Cities; **cascading** — empty until a State is selected. |
+| Post Code | `post_code` | text | No | placeholder "Postal Code" |
 
 ### Description Information
-| Field | Type | Required |
-|---|---|---|
-| Description | multi-line text | No |
+| Field | `name` attr | Type | Required |
+|---|---|---|---|
+| Description | `remark` | multi-line text | No |
+
+A hidden `working_role_short_code` = `CRM_ADMIN` is also posted with the form — the logged-in user's working-role context (tenant/role scoping).
 
 **Actions:** **Submit** (not exercised — would create a real record, forbidden by task rules), **Reset** (clears the form, not exercised to avoid any accidental state change).
 
