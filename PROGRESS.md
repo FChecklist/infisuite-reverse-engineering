@@ -24,13 +24,15 @@
       docs/billstack-bharatnet/payments-and-purchase-invoices-table.md
       (confirms Payment Type = Cash/Bank only -- no payment-gateway integration
       found anywhere in Billstack so far)
+- [x] Sales Invoices & Receipts documented: docs/billstack-bharatnet/sales-invoices-and-receipts.md
+      MAJOR FINDING: Create Invoice / Upload Invoices / Sales Invoices list / Receipts
+      all return HTTP 403 "not enough permission" for billstack_admin -- clicked via
+      actual dashboard links, not guessed URLs. Only Sales Invoices Table (approved/
+      unapproved status widget) and Customers master work on the Customer Bills side.
 
 ## Remaining
 - [ ] Masters > Items, Item Categories, Items Type
 - [ ] Masters > HSN Code, Currencies, Workflow
 - [ ] Masters > Division, Departments, Cost Centres, Locations
 - [ ] Masters > Users, Invite Users
-- [ ] Customer Bills: Sales Invoices list + create form (COM_INSERT_SALES_INVOICES) + Upload/Dynamic (COM_INSERT_SALES_INVOICE_DYNAMIC)
-- [ ] Customer Bills: Sales Invoices Table / approved (COM_LIST_SALES_INVOICES_TABLE)
-- [ ] Customer Bills: Receipts (COM_LIST_RECEIPTS) — check for payment-gateway integration points
 - [ ] Final docs/billstack-bharatnet/SUMMARY.md (data model, function list, Known Gaps)
