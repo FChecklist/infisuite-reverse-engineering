@@ -17,15 +17,19 @@
 - [x] Masters > Customers documented: docs/billstack-bharatnet/customers.md
       (list empty-state, 8-tab create form: Overview/Basic Info/Contact Details/
       Note/Tax Info/Payment and Billing/Attachments/Rental Properties)
+- [x] Supplier Bills documented: docs/billstack-bharatnet/supplier-bills.md
+      (create form incl. line-item grid, Same Ref Documents, Search Item,
+      Multi Reference Documents modal, Type/Exclusive/Discount dropdown options)
+- [x] Payments + Purchase Invoices Table documented:
+      docs/billstack-bharatnet/payments-and-purchase-invoices-table.md
+      (confirms Payment Type = Cash/Bank only -- no payment-gateway integration
+      found anywhere in Billstack so far)
 
 ## Remaining
 - [ ] Masters > Items, Item Categories, Items Type
 - [ ] Masters > HSN Code, Currencies, Workflow
 - [ ] Masters > Division, Departments, Cost Centres, Locations
 - [ ] Masters > Users, Invite Users
-- [ ] Vendor Bills: Supplier Bills list (COM_LIST_SUPPLIER_BILLS) + create form (COM_INSERT_SUPPLIER_BILLS)
-- [ ] Vendor Bills: Purchase Invoices Table / approved (COM_LIST_PURCHASE_INVOICES_TABLE)
-- [ ] Vendor Bills: Payments (COM_LIST_PAYMENTS) — check for payment-gateway integration points
 - [ ] Customer Bills: Sales Invoices list + create form (COM_INSERT_SALES_INVOICES) + Upload/Dynamic (COM_INSERT_SALES_INVOICE_DYNAMIC)
 - [ ] Customer Bills: Sales Invoices Table / approved (COM_LIST_SALES_INVOICES_TABLE)
 - [ ] Customer Bills: Receipts (COM_LIST_RECEIPTS) — check for payment-gateway integration points
